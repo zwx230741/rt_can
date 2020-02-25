@@ -929,7 +929,7 @@ int rt_hw_can_init(void)
     filterConf.SlaveStartFilterBank = 14;
 
 	/* GPIO≥ı ºªØ */
-    HAL_CAN_MspInit(&drv_can1);
+    HAL_CAN_MspInit(&drv_can1.CanHandle);
 
 #ifdef BSP_USING_CAN1
     filterConf.FilterBank = 0;
